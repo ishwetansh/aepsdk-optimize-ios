@@ -16,11 +16,11 @@ import Foundation
 
 @objc
 public extension Optimize {
-    
+
     private static var optimizeTimeout: TimeInterval = OptimizeConstants.DEFAULT_TIMEOUT
     private static let timeoutSemaphore = DispatchSemaphore(value: 1)
     private static var isFetchingTimeout = false
-    
+
     /// This API dispatches an Event for the Edge network extension to fetch decision propositions for the provided decision scopes from the decisioning Services enabled behind Experience Edge.
     ///
     /// The returned decision propositions are cached in memory in the Optimize SDK extension and can be retrieved using `getPropositions(for:_:)` API.
@@ -199,7 +199,6 @@ public extension Optimize {
             completion?(optimizeTimeout)
         }
     }
-
 
     /// This API registers a permanent callback which will be invoked whenever the Edge extension dispatches an Event handle,
     /// upon a personalization decisions response from the Experience Edge Network.
