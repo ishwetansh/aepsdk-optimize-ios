@@ -27,6 +27,8 @@ enum OptimizeConstants {
 
     static let ERROR_UNKNOWN = "unknown"
     static let UNKNOWN_STATUS = 0
+    static let CONFIGURATION_NAME = "com.adobe.module.configuration"
+    static let DEFAULT_TIMEOUT: TimeInterval = 10
 
     enum EventNames {
         static let UPDATE_PROPOSITIONS_REQUEST = "Optimize Update Propositions Request"
@@ -51,6 +53,7 @@ enum OptimizeConstants {
         static let XDM = "xdm"
         static let DATA = "data"
         static let PROPOSITIONS = "propositions"
+        static let TIMEOUT = "timeout"
         static let RESPONSE_ERROR = "responseerror"
         static let PROPOSITION_INTERACTIONS = "propositioninteractions"
         static let REQUEST_EVENT_ID = "requestEventId"
